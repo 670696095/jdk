@@ -1,0 +1,20 @@
+package com.cuizhiwen.jdk.collection;
+
+/**
+ * @author 01418061(cuizhiwen)
+ * @Description:
+ * @date 2019/1/3 17:20
+ */
+public class Demo {
+    /**
+     * 1>ArrayList 数组方式存储，有索引便于查找 不利于删除，插入，数组元素数量大于实际存储。
+     * 2>Vector 有synchronized修饰，线程安全。
+     * 3>LinkedList 双向链表存储 不利于查找 便于插入 删除
+     * 4>Array可存储基本类型和对象类型，ArrayList只能存储对象类型。Array大小固定。
+     * 5>collection 是set list的父类
+     * 6>collections 是一个工具类，提供一系列静态方法来辅助容器操作。
+     * 7>hashMap 和 hashTable都实现了map接口。hashTable允许空键和空值，并且线程同步。
+     */
+
+
+}
