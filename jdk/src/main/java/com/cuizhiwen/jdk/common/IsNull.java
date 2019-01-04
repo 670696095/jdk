@@ -6,6 +6,10 @@ package com.cuizhiwen.jdk.common;
  * @date 2019/1/3 10:03
  */
 public class IsNull {
+    /**
+     * 判空的方式
+     * @param args
+     */
     public static void main(String[] args) {
         String s = null;
         if(s == null ||"".equals(s)){

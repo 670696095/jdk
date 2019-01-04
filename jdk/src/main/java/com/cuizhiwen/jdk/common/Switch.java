@@ -10,8 +10,9 @@ public class Switch {
      * swtich()变量类型只能是int、short、char、byte和enum类型（JDK 1.7 之后，类型也可以是String了）
      */
 
+
     /**
-     * 若未找到，则执行默认的case
+     * 情况一：若未找到，则执行默认的case
      *
      * @return
      */
@@ -34,7 +35,7 @@ public class Switch {
     }
 
     /**
-     * 当每一个case都不存在break时，JVM并不会顺序输出每一个case对应的返回值，而是继续匹配，匹配不成功则返回默认case
+     * 情况二:当每一个case都不存在break时，JVM并不会顺序输出每一个case对应的返回值，而是继续匹配，匹配不成功则返回默认case
      *
      * @return
      */
@@ -54,7 +55,7 @@ public class Switch {
 
 
     /**
-     * 当每一个case都不存在break时，匹配成功后，从当前case开始，依次返回后续所有case的返回值。
+     * 情况三:当每一个case都不存在break时，匹配成功后，从当前case开始，依次返回后续所有case的返回值。
      *
      * @return
      */
@@ -73,7 +74,7 @@ public class Switch {
     }
 
     /**
-     * 若当前匹配成功的case不存在break，则从当前case开始，依次返回后续case的返回值，直到遇到break，跳出判断。
+     * 情况四：若当前匹配成功的case不存在break，则从当前case开始，依次返回后续case的返回值，直到遇到break，跳出判断。
      *
      * @return
      */

@@ -6,6 +6,10 @@ package com.cuizhiwen.jdk.common;
  * @date 2019/1/3 11:00
  */
 public class DataType {
+    /**
+     * 数据类型
+     * @param args
+     */
     public static void main(String[] args) {
         /**
          * 8位 -128 ~  127

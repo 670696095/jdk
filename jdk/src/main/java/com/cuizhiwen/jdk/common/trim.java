@@ -6,18 +6,16 @@ package com.cuizhiwen.jdk.common;
  * @date 2019/1/3 13:24
  */
 public class trim {
+    /**
+     * 字符串去空格
+     * @return
+     */
     public String getName() {
         return name;
     }
-
-    /**
-     *
-     * @param name
-     */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
-
     private String name;
 
     /**
