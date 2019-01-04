@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common;
+package com.cuizhiwen.jdk.common.utils;
 
 /**
  * @author 01418061(cuizhiwen)

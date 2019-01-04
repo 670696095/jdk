@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common;
+package com.cuizhiwen.jdk.common.utils;
 
 import java.util.UUID;
 

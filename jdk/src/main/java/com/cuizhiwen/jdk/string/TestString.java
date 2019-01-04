@@ -59,6 +59,15 @@ public class TestString {
          */
         str.contains("cui");
 
+        /**
+         * java会确保每个字符串常量只有一个，不会产生副本
+         */
+        String s0 = "hello";
+        String s1 = "hello";
+        String s2 = "he"+"llo";
+        System.out.println(s0==s1);
+        System.out.println(s0==s2);
+
 
     }
 }
