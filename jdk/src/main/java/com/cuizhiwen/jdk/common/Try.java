@@ -11,7 +11,7 @@ public class Try {
      * catch去捕捉一个异常
      * throw去抛出一个异常
      * throws标注方法可能抛出的异常
-     * finally确保代码不论发生什么都执行。
+     * finally确保代码不论发生什么都执行。finally中加入return会影响try中的return。
      * @param args
      */
     public static void main(String[] args) {

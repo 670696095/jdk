@@ -10,14 +10,14 @@ import java.util.List;
 public class Memory {
     public static void main(String[] args) {
         /**
-         * 栈  一般存放基本数据类型对象，对象的引用。
+         * 栈  一般存放基本数据类型对象，对象的引用。方法内的局部变量等
          */
         int i = 10;
 
         List list = null;
 
         /**
-         * 堆 一般通过new 或者构造器创建的对象  （str在栈 new的对象在堆内存)。
+         * 堆 一般通过new 或者构造器创建的对象  （str在栈 new的对象在堆内存)。final修饰的局部变量。
          */
         String str = new String("abc");
 
