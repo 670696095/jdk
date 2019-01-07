@@ -8,17 +8,66 @@ package com.cuizhiwen.jdk.object.mulform;
 public class Son extends Father {
     /**
      * 多态：同一行为具有多个不同表现形式或者形态的能力
+     * 绑定: 指的是一个方法的调用与方法所在的类(方法主体)关联起来。
+     *       对java来说，绑定分为静态绑定和动态绑定；或者叫做前期绑定(final，static，private和构造方法)和后期绑定
      */
+
+    protected String name="儿子属性";
+
+
+
+
     public static void main(String[] args) {
         /**
          * 向上转型 父类引用指向子类对象
          *        向上转型会丢失子类中与父类不同的方法
+         *        目的:动态绑定
          */
-        Father father = new Son();
+        Father father = new Son("构造后的名字");
         /**
          * 向下转型 子类引用指向父类引用的子类对象
+         * 目的：java的泛型编程
          */
         Son son = (Son)father;
 
+
+        /**
+         * 声明的是父类的引用，但是执行的过程中调用的是子类的对象，程序首先寻找子类对象的method方法，
+         * 但是没有找到，于是向上转型去父类寻找
+         */
+        father.method();
+
+
+
+        /**
+         * 子类的对象(由父类的引用handle)调用到的是父类的成员变量。
+         * 重点：所以必须明确，运行时（动态）绑定针对的范畴只是对象的方法。
+         */
+        System.out.println("调用的成员："+father.name);
+
+        son.method();
+        System.out.println(son.name);
     }
+
+
+    @Override
+    public void method() {
+        /**
+         * super调用父类中的方法
+         */
+        //super.method();
+        System.out.println("子类方法，对象类型：" + this.getClass());
+    }
+
+    /**
+     * 父类存在有参构造器，子类构造器必须在第一行显示的调用。
+     * @param name
+     */
+    public Son(String name) {
+        super(name);
+        this.name = name;
+    }
+
+
+
 }

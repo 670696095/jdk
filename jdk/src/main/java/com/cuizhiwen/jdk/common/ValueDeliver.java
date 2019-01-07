@@ -7,6 +7,7 @@ package com.cuizhiwen.jdk.common;
  */
 public class ValueDeliver {
     /**
+     * 赋值：就是一个值传递过程。
      * 值传递 ：传递了对象的副本，副本变了，原对象不变
      * 引用传递：传对象的引用，外部引用改变会改变原对象。
      * 自动装箱：对基本数据类型和对应包装类的一个转化

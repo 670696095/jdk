@@ -8,6 +8,9 @@ import java.util.List;
  * @date 2019/1/3 14:50
  */
 public class Memory {
+    /**
+     * mew ：操作符本意是分配内存，调用构造方法，填充各个域（对象初始化）。
+     */
     public static void main(String[] args) {
         /**
          * 栈  一般存放基本数据类型对象，对象的引用。方法内的局部变量等
