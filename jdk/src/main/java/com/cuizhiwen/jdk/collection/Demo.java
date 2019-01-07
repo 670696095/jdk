@@ -19,6 +19,7 @@ public class Demo {
      * 8>set 有序并且不可以重复，
      *         HashSet : HashSet类按照哈希算法来存取集合中的对象，存取速度比较快
      *         TreeSet : TreeSet类实现了SortedSet接口，能够对集合中的对象进行排序。
+     * 9>List 无序并且可以重复
      */
     public static void main(String[] args) {
         /**
