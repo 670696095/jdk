@@ -10,6 +10,9 @@ import java.util.List;
 public class Memory {
     /**
      * mew ：操作符本意是分配内存，调用构造方法，填充各个域（对象初始化）。
+     * 方法区（面向对象）
+     * 本地方法栈
+     * 寄存器
      */
     public static void main(String[] args) {
         /**

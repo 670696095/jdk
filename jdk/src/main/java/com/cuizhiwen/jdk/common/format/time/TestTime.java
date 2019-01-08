@@ -11,7 +11,10 @@ import java.util.Date;
  */
 public class TestTime {
     /**
-     * 时间格式化
+     * 时间格式化:
+     * Date --- 表示日期的类 --- SimpleDateFormat --- 可以在日期和字符串之间
+     * 进行转化，但是在转化的时候需要指定转化格式
+     * Calendar --- 表示日历的类 --- 在jdk1.2出现，推荐使用这个类来取代Date
      * @param args
      */
     public static void main(String[] args) {

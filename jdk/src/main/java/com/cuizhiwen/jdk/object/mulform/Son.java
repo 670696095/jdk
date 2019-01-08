@@ -54,7 +54,8 @@ public class Son extends Father {
     @Override
     public void method() {
         /**
-         * super调用父类中的方法
+         * super调用父类中的方法,用于指代父类对象的引用
+         *          在任意形式的子类构造方法中都会默认调用父类无参构造，如果父类提供了其他形式的构造方法，子类就要使用对应形式的super语句
          */
         //super.method();
         System.out.println("子类方法，对象类型：" + this.getClass());

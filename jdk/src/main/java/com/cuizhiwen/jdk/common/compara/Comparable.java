@@ -17,6 +17,9 @@ public class Comparable implements java.lang.Comparable<Comparable> {
         this.str = str;
     }
     @Override
+    /**
+     * compareTo按字典顺序对两个字符串进行比较，返回的是比较差值
+     */
     public int compareTo(Comparable o) {
         if (this.str.compareTo(o.str)>0){
             return 1;
