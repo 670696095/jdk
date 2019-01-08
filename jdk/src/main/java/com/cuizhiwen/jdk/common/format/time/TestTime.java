@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.format.time;
+package com.cuizhiwen.jdk.common.format.time;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

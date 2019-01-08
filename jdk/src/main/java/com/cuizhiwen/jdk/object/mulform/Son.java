@@ -21,7 +21,7 @@ public class Son extends Father {
         /**
          * 向上转型 父类引用指向子类对象
          *        向上转型会丢失子类中与父类不同的方法
-         *        目的:动态绑定
+         *        目的:动态绑定 编译时类型跟运行时类型不一致
          */
         Father father = new Son("构造后的名字");
         /**
@@ -47,6 +47,7 @@ public class Son extends Father {
 
         son.method();
         System.out.println(son.name);
+
     }
 
 
@@ -67,6 +68,7 @@ public class Son extends Father {
         super(name);
         this.name = name;
     }
+
 
 
 

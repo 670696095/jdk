@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.format.math;
+package com.cuizhiwen.jdk.common.format.math;
 
 /**
  * @author 01418061(cuizhiwen)

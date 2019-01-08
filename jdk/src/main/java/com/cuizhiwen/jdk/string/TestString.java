@@ -7,8 +7,12 @@ package com.cuizhiwen.jdk.string;
  */
 public class TestString {
     /**
-     * String类在java.lang包中,用final修饰，对象创建后不可以修改，赋值后将会生成新的对像来存放新的内容，原先的对象依旧在内存中。
-     *   (循环体中的字符串连接推荐使用StringBuilder的append进行扩展，因为string会不断创建对象，造成内存资源浪费）
+     * String类
+     *      在java.lang包中,用final修饰，对象创建后不可以修改，赋值后将会生成新的对像来存放新的内容，原先的对象依旧在内存中。
+     *
+     *      (循环体中的字符串连接推荐使用StringBuilder的append进行扩展，因为string会不断创建对象，造成内存资源浪费）
+     *
+     *      new关键字创建String时，会先使用常量池，再调用构造器创建一个新string 保存在堆中。
      */
 
     public static void main(String[] args) {

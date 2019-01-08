@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.compara;
+package com.cuizhiwen.jdk.common.compara;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

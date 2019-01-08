@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.compara;
+package com.cuizhiwen.jdk.common.compara;
 
 /**
  * @author 01418061(cuizhiwen)
@@ -12,7 +12,7 @@ public class Comparator implements java.util.Comparator<Comparable> {
      * 1、一个对象不支持自己和自己比较（没有实现Comparable接口），但是又想对两个对象进行比较
      * 2、一个对象实现了Comparable接口，但是开发者认为compareTo方法中的比较方式并不是自己想要的那种比较方式
      */
-
+    @Override
     public int compare(Comparable o1, Comparable o2) {
         if (o1.getStr().compareTo(o2.getStr())>0){
             return 1;

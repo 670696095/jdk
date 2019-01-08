@@ -8,6 +8,7 @@ package com.cuizhiwen.jdk.common.utils;
 public enum ResultEnums {
     /**
      * 枚举类
+     *      枚举类的构造器默认是private
      */
 
 
@@ -36,7 +37,7 @@ public enum ResultEnums {
     private String status;
     private String message;
 
-    ResultEnums(final String status, final String messgae) {
+    private ResultEnums(final String status, final String messgae) {
         this.status = status;
         this.message = messgae;
     }

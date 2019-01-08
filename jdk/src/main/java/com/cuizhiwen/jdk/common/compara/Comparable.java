@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.compara;
+package com.cuizhiwen.jdk.common.compara;
 
 /**
  * @author 01418061(cuizhiwen)
@@ -15,7 +15,7 @@ public class Comparable implements java.lang.Comparable<Comparable> {
     Comparable(String str){
         this.str = str;
     }
-
+    @Override
     public int compareTo(Comparable o) {
         if (this.str.compareTo(o.str)>0){
             return 1;
