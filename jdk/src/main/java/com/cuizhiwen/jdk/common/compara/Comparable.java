@@ -7,8 +7,9 @@ package com.cuizhiwen.jdk.common.compara;
  */
 public class Comparable implements java.lang.Comparable<Comparable> {
     /**
-     * 1>Comparable是一个内比较器，是一个排序接口。它依赖compareTo方法的实现比较
+     * 1>Comparable是一个内比较器，是一个排序接口。它依赖compareTo方法的实现比较   （自然排序）
      *   实现了Comparable接口的类的对象的列表或数组可以通过Collections.sort或Arrays.sort进行自动排序。
+     * 2> 实现了comparable接口的类  BigDecimal  character  Boolean  String  Date  Time
      */
     private  String str;
 
@@ -40,5 +41,6 @@ public class Comparable implements java.lang.Comparable<Comparable> {
         System.out.println(t1.compareTo(t2));
         System.out.println(t1.compareTo(t3));
         System.out.println(t1.compareTo(t4));
+
     }
 }
