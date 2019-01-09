@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.object.Electronicsshop;
+package com.cuizhiwen.jdk.object.mulform.Electronicsshop;
 
 import java.util.ArrayList;
 import java.util.List;

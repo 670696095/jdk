@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.object.Electronicsshop;
+package com.cuizhiwen.jdk.object.mulform.Electronicsshop;
 
 public class Test {
     public static final int THINKPAD = 0;
