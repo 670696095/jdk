@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.principle;
+package com.cuizhiwen.jdk.common.principle;
 
 public class Common {
     /**
