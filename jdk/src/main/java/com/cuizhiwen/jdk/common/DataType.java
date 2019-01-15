@@ -8,7 +8,7 @@ package com.cuizhiwen.jdk.common;
 public class DataType {
     /**
      * 数据类型
-     * @param args
+     * byte->short->char->int->long->float->double
      */
     public static void main(String[] args) {
         /**
