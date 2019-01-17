@@ -7,8 +7,9 @@ import java.util.Vector;
  * @Description:
  * @date 2019/1/3 17:20
  */
-public class Demo {
+public class Common {
     /**
+     * 集合: 所有的集合类都继承了Iterator接口,有hashNext() next()方法
      * 1>ArrayList 数组方式存储，有索引便于查找 不利于删除，插入，数组元素数量大于实际存储。允许重复
      * 2>Vector 有synchronized修饰，线程安全。
      * 3>LinkedList 双向链表存储 不利于查找 便于插入 删除
