@@ -5,10 +5,14 @@ package com.cuizhiwen.jdk.common.utils;
  * @Description:
  * @date 2019/1/4 14:18
  */
-public enum ResultEnums {
+public enum ResultEnums  {
     /**
      * 枚举类
      *      枚举类的构造器默认是private
+     *      枚举用final修饰，仅仅可以重写toString
+     *      枚举可以有 方法，静态方法 抽象方法 构造方法
+     * 应用:
+     *      可以列举出来的用枚举，不可以列举或者太多的用常量。
      */
 
 
@@ -57,4 +61,5 @@ public enum ResultEnums {
     public void setMessage(String message) {
         this.message = message;
     }
+
 }
