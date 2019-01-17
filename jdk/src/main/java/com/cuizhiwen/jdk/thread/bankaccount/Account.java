@@ -34,9 +34,10 @@ public class Account {
     private double balance;
 
     /**
-     *   同步方法:
+     *   同步方法:提供一个线程安全的draw（）方法完成取钱的操作
      *
-     *   提供一个线程安全的draw（）方法完成取钱的操作
+     *   （锁如果没有被释放，那其他地方就不能调用这个锁锁定的代码）
+     *
      */
     public synchronized void draw(double drawAmount)
     {
@@ -52,6 +53,12 @@ public class Account {
         }else{
             System.out.println(Thread.currentThread().getName()+"取钱失败，余额不足");
         }
+    }
+    /**
+     *  如果有其他的同步锁没有被释放，那就不能访问这个方法
+     */
+    public synchronized void otherDraw(String name){
+        System.out.println("----adraw-----");
     }
 
     /**
@@ -80,4 +87,22 @@ public class Account {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()){
+            return false;
+        }
+        Account account = (Account) o;
+        return account.getAccountNo().equals(accountNo);
+    }
+
+    @Override
+    public int hashCode() {
+
+        //return Objects.hash(lock, accountNo, balance);
+        return accountNo.hashCode();
+    }
 }

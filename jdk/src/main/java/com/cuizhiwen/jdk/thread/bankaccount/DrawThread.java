@@ -12,8 +12,14 @@ public class DrawThread extends Thread {
     /**
      *  同步代码块
      */
-    private Account account;
 
+    /**
+     *取钱的用户
+     */
+    private Account account;
+    /**
+     *当前线程所希望取的钱
+     */
     private double drawAmount;
 
     public DrawThread(String name , Account account, double drawAmount)
@@ -27,6 +33,8 @@ public class DrawThread extends Thread {
     public void run() {
         /**
          * 同步代码块
+         * account为同步监视器
+         *         我们可以把同步监视器理解成一个门，要锁定的代码理解成门后的东西。我们要禁止其他人通过门去访问门后的东西，那就要把门锁住。
          */
         synchronized (account)
         {
@@ -45,7 +53,7 @@ public class DrawThread extends Thread {
                 System.out.println(getName()+"取钱失败，余额不足");
             }
         }
-
+        System.out.println(getName()+"测试同步代码块后面的代码能否执行！ 答案是:不执行");
         account.draw(drawAmount);
     }
 }
