@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.exception;
+package com.cuizhiwen.jdk.exception;
 
 import java.io.FileInputStream;
 import java.io.IOException;

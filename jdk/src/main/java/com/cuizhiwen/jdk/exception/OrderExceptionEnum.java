@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.exception;
+package com.cuizhiwen.jdk.exception;
 
 /**
  * @author 01418061(cuizhiwen)

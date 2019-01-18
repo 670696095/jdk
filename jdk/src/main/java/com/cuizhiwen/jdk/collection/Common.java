@@ -22,6 +22,8 @@ public class Common {
      *         HashSet : HashSet类按照哈希算法来存取集合中的对象，存取速度比较快
      *         TreeSet : TreeSet类实现了SortedSet接口，能够对集合中的对象进行排序。必须实现comparable接口
      * 9>List 无序并且可以重复
+     *
+     * Collections：集合工具类，提供大量方法对集合排序 查询 修改，将集合设为不可变累，同步控制等。
      */
     public static void main(String[] args) {
         /**
