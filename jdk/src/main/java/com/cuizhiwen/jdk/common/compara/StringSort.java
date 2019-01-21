@@ -33,6 +33,7 @@ public class StringSort {
         list.add("a");
         list.add("A");
         Collections.sort(list, new Comparator<String>() {
+            @Override
             public int compare(String o1, String o2) {
                 if (o1 == null || o2 == null){
                     return 0;

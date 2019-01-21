@@ -15,7 +15,7 @@ public class Commons {
      *
      * 分类：抽象基类
      *      字符   （ Reader 、writer  ）
-     *      字节   (inputStream 、outputStream）
+     *      字节   (inputStream 、outputStream） 不支持缓存。
      *
      *      底层节点流（底层物理节点） 可以从/向特定Io设备读写数据的流。
      *      上层处理流 ( 底层物理节点流可以被包装成处理流，提供统一代码读取) 可嫁接在任何已存在的流基础上，装饰器模式

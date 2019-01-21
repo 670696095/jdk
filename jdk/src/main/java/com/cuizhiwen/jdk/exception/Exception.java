@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Exception {
     /**
      * 异常: Throwable是所有Java程序中错误处理的父类 ，有两种子类：Error和Exception。
-     *                  Error是错误，java.lang.Error 
+     *                  Error是错误，java.lang.Error  （AwtError ThreadDeath）
      *                  Exception是异常，java.lang.Exception
      *
      *  Java的异常被分为两大类：Checked异常和Runtime异常（运行时异常）
@@ -30,7 +30,8 @@ public class Exception {
      *
      * RuntimeException:InputMismatchException 输入不匹配异常 ArithmeticException 算术运算异常 NullPointerException 空指针异常
      *                  ArrayIndexOutOfBoundsException 数组下标越界异常   ClassCastException 类型转换异常
-     * checked：        IOException 文件异常  SQLException SQL数据库错误异常
+     *
+     * checked：        IOException 文件异常  SQLException SQL数据库错误异常 ClassNotFoundException
      *
      *
      * 处理异常一般三种方式： 1>使用 try-catch-finally 来捕获和处理异常 (catch里的异常列表一般是子类在前，父类(Exception)在后)
