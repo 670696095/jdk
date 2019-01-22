@@ -3,10 +3,6 @@ package com.cuizhiwen.jdk.common.utils;
 import ch.qos.logback.classic.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author songbin
- * @version 2016年6月4日 下午2:43:27  
- */
 public class YTOLogger
 {
 	private final String FQCN = getClass().getName();

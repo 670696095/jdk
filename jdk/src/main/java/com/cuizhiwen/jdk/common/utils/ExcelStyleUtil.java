@@ -6,7 +6,6 @@ import cn.afterturn.easypoi.excel.export.styler.IExcelExportStyler;
 import org.apache.poi.ss.usermodel.*;
 
 /**
- * @author wxlbobo
  * @date 2018/9/12
  * @since 1.0.0
  */

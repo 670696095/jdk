@@ -5,10 +5,6 @@ import net.sf.oval.Validator;
 
 import java.util.List;
 
-/**
- * @author songbin
- * @version Id: ParamVerifyUtil.java, v 0.1 2018/9/3 17:37  Exp $$
- */
 public class ParamVerifyUtil {
     private static Validator validator = new Validator();
 
