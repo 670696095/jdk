@@ -52,6 +52,7 @@ public class UseComparator {
      * 自定义比较器：按书的价格排序
      */
     static class PriceComparator implements java.util.Comparator {
+        @Override
         public int compare(Object object1, Object object2) {// 实现接口中的方法
             Book p1 = (Book) object1;
             Book p2 = (Book) object2;

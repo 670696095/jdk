@@ -16,6 +16,7 @@ public class StringSort {
 
         String [] strings = {"D","a","A"};
         Arrays.sort(strings, new Comparator<String>() {
+            @Override
             public int compare(String o1, String o2) {
                 if (o1 == null || o2 == null){
                     return 0;
