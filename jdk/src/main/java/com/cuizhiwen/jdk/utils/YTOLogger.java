@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.utils;
+package com.cuizhiwen.jdk.utils;
 
 import ch.qos.logback.classic.Logger;
 import org.slf4j.LoggerFactory;

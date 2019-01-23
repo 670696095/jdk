@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.utils;
+package com.cuizhiwen.jdk.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

@@ -1,5 +1,5 @@
 
-package com.cuizhiwen.jdk.common.utils;
+package com.cuizhiwen.jdk.utils;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.utils;
+package com.cuizhiwen.jdk.utils;
 
 import cn.afterturn.easypoi.excel.entity.params.ExcelExportEntity;
 import cn.afterturn.easypoi.excel.entity.params.ExcelForEachParams;

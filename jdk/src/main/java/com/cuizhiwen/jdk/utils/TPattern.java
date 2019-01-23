@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.common.utils;
+package com.cuizhiwen.jdk.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
