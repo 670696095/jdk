@@ -23,7 +23,7 @@ public class Memory {
         List list = null;
 
         /**
-         * 堆 一般通过new 或者构造器创建的对象  （str在栈 new的对象在堆内存)。final修饰的局部变量。
+         * 堆 一般通过new 或者构造器创建的对象  （str在栈 new的对象在堆内存)。final修饰的局部变量。 全局变量
          */
         String str = new String("abc");
 

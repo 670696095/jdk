@@ -72,6 +72,10 @@ public class TestString {
         System.out.println(s0==s1);
         System.out.println(s0==s2);
 
+        char[] helloArray = { 'r', 'u', 'n', 'o', 'o', 'b'};
+        String helloString = new String(helloArray);
+        System.out.println( helloString );
+
 
     }
 }

@@ -9,13 +9,17 @@ import java.util.Date;
  * @Description:
  * @date 2019/1/4 15:27
  */
-public class TestTime {
+public class TestTime   {
     /**
      * 时间格式化:
      * Date --- 表示日期的类 --- SimpleDateFormat --- 可以在日期和字符串之间
      * 进行转化，但是在转化的时候需要指定转化格式
      * Calendar --- 表示日历的类 --- 在jdk1.2出现，推荐使用这个类来取代Date
-     * @param args
+     * 日期比较：
+     * Java使用以下三种方法来比较两个日期：
+     *      使用 getTime() 方法获取两个日期（自1970年1月1日经历的毫秒数值），然后比较这两个值。
+     *      使用方法 before()，after() 和 equals()。例如，一个月的12号比18号早，则 new Date(99, 2, 12).before(new Date (99, 2, 18)) 返回true。
+     *      使用 compareTo() 方法，它是由 Comparable 接口定义的，Date 类实现了这个接口。
      */
     public static void main(String[] args) {
         /**
@@ -36,6 +40,8 @@ public class TestTime {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         System.out.println("当前时间：" + sdf.format(d));
 
+        fun();
+
 
     }
 
@@ -54,4 +60,23 @@ public class TestTime {
         long betweenDays = (time2 - time1)/(24*3600*1000);
         return  Integer.parseInt(String.valueOf(betweenDays));
     }
+
+    /**
+     * 计算执行时间差
+     */
+    private static void fun(){
+        try {
+            long start = System.currentTimeMillis( );
+            System.out.println(new Date( ) + "\n");
+            Thread.sleep(5*60*10);
+            System.out.println(new Date( ) + "\n");
+            long end = System.currentTimeMillis( );
+            long diff = end - start;
+            System.out.println("Difference is : " + diff);
+        } catch (Exception e) {
+            System.out.println("Got an exception!");
+        }
+    }
+
+
 }

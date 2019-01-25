@@ -11,6 +11,8 @@ public class ValueDeliver {
      * 值传递 ：传递了对象的副本，副本变了，原对象不变
      * 引用传递：传对象的引用，外部引用改变会改变原对象。
      * 自动装箱：对基本数据类型和对应包装类的一个转化
+     *          内置数据类型被当作对象使用的时候，编译器会把内置类型装箱为包装类
+     * Math.round 加正0.5后 向下取整。
      */
     public static void main(String[] args) {
 
@@ -32,6 +34,7 @@ public class ValueDeliver {
 
         //自动拆箱
         int n = j;
+        System.out.println("访问\"菜鸟教程!\"");
     }
 
 }
