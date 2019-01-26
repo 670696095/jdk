@@ -5,7 +5,7 @@ package com.cuizhiwen.jdk.object.facaobject;
  * @Description:
  * @date 2019/1/7 15:52
  */
-public class ObjectFace {
+public class FaceObject {
     /**
      * 初始化块：总是在构造器执行之前被调用。
      */

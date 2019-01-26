@@ -15,8 +15,11 @@ public class Try {
      * finally 确保代码不论发生什么都执行。finally中加入return会影响try中的return。
      *         finally一般用于回收try块中打开的物理资源。位于所有catch之后。
      *         用system.exit()可以阻止finally执行。
-     *
-     * @param args
+     * 注意:
+     *  catch 不能独立于 try 存在。
+     *  在 try/catch 后面添加 finally 块并非强制性要求的。
+     *  try 代码后不能既没 catch 块也没 finally 块。
+     *  try, catch, finally 块之间不能添加任何代码。
      */
     public static void main(String[] args) {
         String str =null;

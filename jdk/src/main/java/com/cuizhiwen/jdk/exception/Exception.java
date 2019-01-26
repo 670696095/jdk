@@ -12,7 +12,7 @@ public class Exception {
     /**
      * 异常: Throwable是所有Java程序中错误处理的父类 ，有两种子类：Error和Exception。
      *                  Error是错误，java.lang.Error  （AwtError ThreadDeath）
-     *                  Exception是异常，java.lang.Exception
+     *                  Exception是异常，java.lang.Exception 子类是IOException 类和 RuntimeException 类。
      *
      *  Java的异常被分为两大类：Checked异常和Runtime异常（运行时异常）
 
@@ -24,6 +24,7 @@ public class Exception {
      *
      * 注意:出现运行时异常后，系统会把异常一直往上层抛，一直遇到处理代码。如果没有处理块，到最上层，
      *     如果是多线程就由Thread.run()抛出，如果是单线程就被main()抛出。
+     *
      *
      * 两小原则: 1> 子类方法声明抛出异常类型是父类方法抛出异常类型子类或者相同。
      *         2> 子类方法抛出异常不能比父类多。
@@ -43,15 +44,10 @@ public class Exception {
      * Java异常处理实际应用中的经验与总结：
      *
      * 1、处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理；
-     *
      * 2、在多重catch块后面，可以加一个catch（Exception）来处理可能会被遗漏的异常；
-     *
      * 3、对于不确定的代码，也可以加上try-catch，处理潜在异常；
-     *
      * 4、尽量去处理异常，切忌只是简单的调用printStackTrace()去打印输出；
-     *
      * 5、具体如何处理异常，要根据不同的业务需求和异常类型去决定；
-     *
      * 6、尽量添加finally语句块去释放占用的资源。
      *
      */

@@ -10,6 +10,8 @@ import java.lang.reflect.Method;
 public class reflect {
     /**
      * 反射：程序可以访问，检测，修改它本身状态或者行为的一种能力。对任意一个类都可以知道这个类所有属性和方法。
+     * $Proxy
+     *      jdk代理对象
      */
 
     /**
