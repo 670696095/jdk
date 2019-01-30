@@ -57,5 +57,15 @@ public class Iter {
          */
         list.forEach(s -> System.out.println(s));
 
+
+        //把链表变为数组相关的内容进行遍历
+        String[] strArray=new String[list.size()];
+        list.toArray(strArray);
+        //这里也可以改写为  foreach(String str:strArray)这种形式
+        for(int i=0;i<strArray.length;i++)
+        {
+            System.out.println(strArray[i]);
+        }
+
     }
 }

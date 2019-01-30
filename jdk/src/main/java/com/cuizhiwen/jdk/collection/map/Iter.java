@@ -33,7 +33,7 @@ public class Iter {
         System.out.println("\n================");
 
         /**
-         *   1.5 for-each 循环操作
+         *   1.5 for-each 循环操作  普遍使用，二次取值
          */
         for(String o : map.keySet()){
             System.out.print (map.get(o)+"\t");
@@ -56,7 +56,7 @@ public class Iter {
 
         /**
          * 方法二：
-         *      jdk1.5支持，用entrySet()和For-Each循环()
+         *      jdk1.5支持，用entrySet()和For-Each循环() 推荐，尤其是容量大时
          */
         System.out.println("\n=用entrySet()和For-Each===");
         for (Map.Entry<String, Integer> m : map.entrySet()) {
@@ -86,7 +86,9 @@ public class Iter {
             System.out.println("[name = " + key
                     + "] age = " + map.get(key) );
         }
-
+        /**
+         * 方法六: 通过Map.values()遍历所有的value，但不能遍历key
+         */
         for (Integer integer : map.values()) {
             System.out.println(integer);
         }
