@@ -5,6 +5,6 @@ package com.cuizhiwen.jdk.object.mulform.Electronicsshop;
  */
 public interface Electronics {
     /**
-     * 多态练习
+     * 多态：
      */
 }
