@@ -6,6 +6,10 @@ package com.cuizhiwen.jdk.common.clone;
  * @date 2019/2/14 17:00
  */
 public class CopyConstructor {
+    /**
+     * 要注意：如果在拷贝构造方法中，对引用数据类型变量逐一开辟新的内存空间，创建新的对象，也可以实现深拷贝。而对于一般的拷贝构造，则一定是浅拷贝。
+     * @param args
+     */
     public static void main(String[] args) {
         Age a=new Age(20);
         Person p1=new Person(a,"摇头耶稣");
