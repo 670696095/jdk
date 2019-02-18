@@ -49,10 +49,23 @@ public class DataType {
          * 16位 -32768 ~ 32767
          */
         short s = -32768;
+        short s1 = 1;
+        s1 += 1;
         /**
          * 32位
+         * 如果整型字面量的值在-128 到 127 之间，那么不会 new 新的 Integer 对象，而是直接引用常量池
+         * 中的 Integer 对象，
          */
         int i = 1;
+        Integer integer = new Integer(3);
+        Integer g = 555;
+        int h = 3;
+        System.out.println(integer.equals(g));
+        System.out.println(integer == h);
+
+        Integer f1 = 100,f2 = 100, f3 = 150,f4 = 150;
+        System.out.println(f1.equals(f2));
+        System.out.println(f3.equals(f4));
         /**
          * 64位
          */
@@ -66,7 +79,7 @@ public class DataType {
         double d1 = 3.14E3;
         final double PI = 3.1415927;
         /**
-         * 字符型 16 位 Unicode 字符 0~65535
+         * 字符型 16 位 Unicode（不选择任何特定的编码，直接使用字符在字符集中的编号，这是统一的唯一方法）， 字符 0~65535
          */
         char c ='A';
         char c1 = 65535;

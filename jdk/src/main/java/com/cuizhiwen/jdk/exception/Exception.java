@@ -8,12 +8,15 @@ import java.io.IOException;
  * @Description:
  * @date 2019/1/9 10:06
  */
-public class Exception {
+public class Exception extends Throwable{
     /**
      * 异常: Throwable是所有Java程序中错误处理的父类 ，有两种子类：Error和Exception。
      *                  Error是错误，java.lang.Error  （AwtError ThreadDeath）
+     *                      Error 类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等。对于这类
+     *                      错误的导致的应用程序中断，仅靠程序本身无法恢复和和预防，遇到这样的错误，建议让程序终止。
      *                  Exception是异常，java.lang.Exception 子类是IOException 类和 RuntimeException 类。
-     *
+     *                      Exception 类表示程序可以处理的异常，可以捕获且可能恢复。遇到这类异常，应该尽可能处理异常，使程序恢复
+     *                      运行，而不应该随意终止异常。
      *  Java的异常被分为两大类：Checked异常和Runtime异常（运行时异常）
 
      *                 1>Checked异常都是可以被处理（修复）的异常，所以Java程序必须显示处理Checked异常。如果程序没有处理Checked异常，
@@ -31,6 +34,7 @@ public class Exception {
      *
      * RuntimeException:InputMismatchException 输入不匹配异常 ArithmeticException 算术运算异常 NullPointerException 空指针异常
      *                  ArrayIndexOutOfBoundsException 数组下标越界异常   ClassCastException 类型转换异常
+     *                  IllegalArgumentException方法传递参数错误。
      *
      * checked：        IOException 文件异常  SQLException SQL数据库错误异常 ClassNotFoundException
      *
@@ -57,7 +61,10 @@ public class Exception {
         // 因为test()方法声明抛出IOException异常，
         // 所以调用该方法的代码要么处于try...catch块中，
         // 要么处于另一个带throws声明抛出的方法中。
-        test();
+        //test();
+        System.out.println(getNum());
+
+
 
     }
     public static void test()throws IOException
@@ -66,6 +73,17 @@ public class Exception {
         // 所以调用FileInputStream的代码要么处于try...catch块中，
         // 要么处于另一个带throws声明抛出的方法中。
         FileInputStream fis = new FileInputStream("a.txt");
+    }
+
+    public static int getNum(){
+        try {
+            int a = 1/0;
+            return 1;
+        } catch (java.lang.Exception e) {
+            return 2;
+        }finally{
+            return 3;
+        }
     }
 
 

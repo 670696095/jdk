@@ -26,7 +26,6 @@ public interface Interface {
      *      类在重写方法时要保持一致的方法名，并且应该保持相同或者相兼容的返回值类型。
      *      如果实现接口的类是抽象类，那么就没必要实现该接口的方法。
      *      在实现接口的时候，也要注意一些规则：
-     *
      *      一个类可以同时实现多个接口。
      *      一个类只能继承一个类，但是能实现多个接口。
      *      一个接口能继承另一个接口，这和类之间的继承比较相似。
@@ -52,6 +51,8 @@ public interface Interface {
      * java8 以后接口可以有默认方法 和类方法
      */
     default void fun(){}
-    static void fun1(){}
+    static void fun1(){
+        System.out.println("我是接口中的静态方法");
+    }
 
 }

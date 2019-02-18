@@ -12,13 +12,21 @@ public class Commons {
      * IO流：
      *      输入流:程序读取外部数据（磁盘，光盘等）到内存。
      *      输出流:程序把数据从内存输出到存储设备中。
+     *
+     *      按照实现功能分：
+     *          1)节点流（可以从或向一个特定的地方（节点）读写数据。如 FileReader）和2)处理流（是对一个
+     *          已存在的流的连接和封装，通过所封装的流的功能调用实现数据读写。如 BufferedReader。处理流的构造方法总是要
+     *          带一个其他的流对象做参数。一个流对象经过其他流的多次包装，称为流的链接。
+     *      按照处理数据的单位：
+     *          字节流和字符流。字节流继承于 InputStream 和 OutputStream，
+     *          字符流继承于InputStreamReader 和 OutputStreamWrite
+     *
      *      Java.io 包几乎包含了所有操作输入、输出需要的类。所有这些流类代表了输入源和输出目标。
      *      Java.io 包中的流支持很多种格式，比如：基本类型、对象、本地化字符集等等。
      *
      * 分类：抽象基类
      *      字符   （ Reader 、writer  ）
      *      字节   (inputStream 、outputStream） 不支持缓存。
-     *
      *      底层节点流（底层物理节点） 可以从/向特定Io设备读写数据的流。
      *      上层处理流 ( 底层物理节点流可以被包装成处理流，提供统一代码读取) 可嫁接在任何已存在的流基础上，装饰器模式
      * FileInputStream:
@@ -31,6 +39,11 @@ public class Commons {
      * File类：
      *       mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。
      *       mkdirs()方法创建一个文件夹和它的所有父文件夹。
+     * 注意:
+     *      使用 Unicode 意味着字符在 JVM 内部和外部有不同的表现形式，在 JVM 内部都是 Unicode，当这个字符被
+     *      从 JVM 内部转移到外部时（例如存入文件系统中），需要进行编码转换。所以 Java 中有字节流和字符流，以及在字
+     *      符流和字节流之间进行转换的转换流，如 InputStreamReader 和 OutputStreamReader，这两个类是字节流和字符
+     *      流之间的适配器类，承担了编码转换的任务；
      */
 
     public static void main(String[] args) throws IOException {

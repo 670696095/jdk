@@ -8,6 +8,7 @@ package com.cuizhiwen.jdk.common;
 public class Switch {
     /**
      * swtich()变量类型只能是int、short、char、byte和enum类型（JDK 1.7 之后，类型也可以是String了）
+     * long类型一直不能作为Switch变量值
      */
 
 
