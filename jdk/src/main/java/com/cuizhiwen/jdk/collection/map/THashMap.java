@@ -13,6 +13,9 @@ import java.util.Set;
 public class THashMap {
     /**
      * hashMap: jdk1.8用到红黑树，既要保证查询也要保证插入。
+     *
+     *
+     *
      */
     public static void main(String[] args) {
         HashMap<Integer,String> map = new HashMap<>();

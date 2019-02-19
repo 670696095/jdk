@@ -19,7 +19,8 @@ public class TList {
      *      LinkedList、双向链表存储 不利于查找（没有索引不利于快速查询） 便于插入 删除
      */
     public static void main(String[] args) {
-        List<String> list1 = new ArrayList();
+        List<String> list3 = new ArrayList();
+        List<String> list1 = new ArrayList(list3);
         List<String> list2 = new LinkedList<>();
         list1.add("1");
         list2.add("2");
