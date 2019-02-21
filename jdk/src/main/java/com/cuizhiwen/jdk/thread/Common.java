@@ -63,11 +63,50 @@ public class Common extends Thread{
      *      具有较高优先级的线程对程序更重要，并且应该在低优先级的线程之前分配处理器资源。但是，线程优先级不能保证线程执行的顺序，而且非常依赖于平台。
      */
     public static void main(String[] args) {
-        System.out.println("主线程ID:"+Thread.currentThread().getId());
+        System.out.println("主线程ID:" + Thread.currentThread().getId());
         new Common().start();
         new Common().run();
 
+        /**
+         *
+         * 在 Thread 子类覆盖的 run 方法中编写运行代码方
+         */
+        new Thread() {
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            }
+        }.start();
+
+        /**
+         *  在传递给 Thread 对象的 Runnable 对象的 run 方法中编写代码
+         *
+         *      如果 Threa类的 run 方法没有被覆盖，并且为该 Thread 对象设置了一个 Runnable 对象，该 run 方法会调用 Runnable 对象的run 方法
+         */
+        new Thread(new Runnable(){
+            @Override
+            public void run(){
+                while(true){
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread().getName());
+                }
+            }
+        }).start();
     }
+
+
+
     @Override
     public void run(){
         System.out.println(this.getName());
