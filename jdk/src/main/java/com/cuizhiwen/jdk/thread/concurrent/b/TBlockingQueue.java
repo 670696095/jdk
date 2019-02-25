@@ -7,7 +7,7 @@ package com.cuizhiwen.jdk.thread.concurrent.b;
  */
 public class TBlockingQueue {
     /**
-     *  并发队列-阻塞队列
+     *  并发队列---------阻塞队列
      *      常用的并发队列有阻塞队列和非阻塞队列，前者使用锁实现，后者则使用 CAS 非阻塞算法实现。
      *  阻塞队列:
      *      阻塞队列 (BlockingQueue)是 Java util.concurrent 包下重要的数据结构，BlockingQueue 提供了线程安全的队

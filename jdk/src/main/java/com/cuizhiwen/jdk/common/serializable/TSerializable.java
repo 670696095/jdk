@@ -19,6 +19,11 @@ public class TSerializable {
      *      1)该类必须实现 java.io.Serializable 对象。
      *      2)该类的所有属性必须是可序列化的。如果有一个属性不是可序列化的，则该属性必须注明是短暂的
      *      3)检验一个类的实例是否能序列化十分简单， 只需要查看该类有没有实现 java.io.Serializable接口。
+     * 1. transient
+     *      词义：短暂的
+     *      首先说说“序列化”，把一个对象的表示转化为字节流的过程称为串行化（也称为序列化，serialization），从字节流中把对象重建出来称为反串行化
+     *      （也称为为反序列化，deserialization）。transient 为不应被串行化的数据提供了一个语言级的标记数据方法。
+     *      transient是类型修饰符，只能用来修饰字段。在对象序列化的过程中，标记为transient的变量不会被序列化。
      */
 
     public static void main(String [] args)
