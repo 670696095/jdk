@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.thread;
+package com.cuizhiwen.jdk.thread.exam;
 
 /**
  * @author 01418061(cuizhiwen)
