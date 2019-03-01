@@ -72,6 +72,10 @@ public class Common extends Thread{
      *      notify()：唤醒一个处于等待状态的线程，当然在调用此方法的时候，并不能确切的唤醒某一个等待状态的线程，而是由 JVM 确定唤醒哪个线程，而且与优先级无关；
      *      notityAll()：唤醒所有处于等待状态的线程，该方法并不是将对象的锁给所有线程，而是让它们竞争，只有获得锁的线程才能进入就绪状态；
      *      注意：java 5 通过 Lock 接口提供了显示的锁机制，Lock 接口中定义了加锁（lock（）方法）和解锁（unLock（）方法），增强了多线程编程的灵活性及对线程的协调
+     * 启动一个线程是调用 run()方法还是 start()方法？
+     *      启动一个线程是调用 start()方法，使线程所代表的虚拟处理机处于可运行状态，这意味着它可以由 JVM 调度并
+     *      执行，这并不意味着线程就会立即运行。
+     *      run()方法是线程启动后要进行回调（callback）的方法。
      */
     public static void main(String[] args) {
         System.out.println("主线程ID:" + Thread.currentThread().getId());
