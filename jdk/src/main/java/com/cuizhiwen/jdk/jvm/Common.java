@@ -17,7 +17,7 @@ public class Common<Interger>{
      *      3.java堆
      *      4.直接内存
      *      5.垃圾回收系统
-     *      6.java栈（保存着栈帧信息，栈中存储局部变量，方法参数）
+     *      6.java栈（保存着栈帧信息，栈中存储局部变量，方法参数 返回地址）
      *      7.本地方法栈（本地方法)
      *      8.PC寄存器
      *      9.执行引擎（最核心的组件，JIT即使编译)
@@ -48,7 +48,6 @@ public class Common<Interger>{
      * 垃圾收集器:
      *       ScavenGc 次收集
      *       FullGc   全收集
-     *
      *       1、Serial(年轻代）
      *       2、ParNew(年轻代）
      *       3、Paralle Scavenge(年轻代）

@@ -1,4 +1,4 @@
-package com.cuizhiwen.jdk.jvm;
+package com.cuizhiwen.jdk.jvm.classload;
 
 /**
  * @author 01418061(cuizhiwen)
