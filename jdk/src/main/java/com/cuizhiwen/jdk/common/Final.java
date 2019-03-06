@@ -1,5 +1,7 @@
 package com.cuizhiwen.jdk.common;
 
+import java.util.Arrays;
+
 /**
  * @author 01418061(cuizhiwen)
  * @Description:
@@ -34,5 +36,10 @@ public class Final {
         String e = d+2;
         System.out.println(a == c);
         System.out.println(a == e);
+
+        Arrays.asList(null);
+    }
+
+    public  Final() {
     }
 }

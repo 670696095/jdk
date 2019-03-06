@@ -91,4 +91,35 @@ public class Java {
      *      在Java中，如果给出一个完整的限定名，包括包名、类名，那么Java编译器就可以很容易地定位到源代码或者类。
      *      Import语句就是用来提供一个合理的路径，使得编译器可以找到某个类。
      */
+    public static void main(String[] args) {
+        System.out.println(new B().getValue());
+    }
+    static class A {
+        protected int value;
+        public A (int v) {
+            setValue(v);
+        }
+        public void setValue(int value) {
+            this.value= value;
+        }
+        public int getValue() {
+            try {
+                value ++;
+                return value;
+            } finally {
+                this.setValue(value);
+                System.out.println(value);
+            }
+        }
+    }
+    static class B extends A {
+        public B () {
+            super(5);
+            setValue(getValue()- 3);
+        }
+        @Override
+        public void setValue(int value) {
+            super.setValue(2 * value);
+        }
+    }
 }
