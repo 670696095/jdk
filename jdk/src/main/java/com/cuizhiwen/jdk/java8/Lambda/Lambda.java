@@ -31,6 +31,14 @@ public class Lambda {
      *          (int x, int y) -> x + y
      *      // 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)
      *          (String s) -> System.out.print(s)
+     *
+     * 要点 3：lambda 表达式内部引用资源
+     * lambda 内部可以使用静态、非静态和局部变量，这称为 lambda 内的变量捕获。
+     * 要点 4：lambda 表达式也成闭包
+     * Lambda 表达式在 Java 中又称为闭包或匿名函数，所以如果有同事把它叫闭包的时候，不用惊讶。
+     * 要点 6：lambda 表达式的限制
+     * lambda 表达式有个限制，那就是只能引用 final 或 final 局部变量，这就是说不能在 lambda 内部修改定义在
+     * 域外的变量。
      */
     public static void main(String[] args) {
     }
